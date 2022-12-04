@@ -1,3 +1,6 @@
+setopt auto_cd
+function chpwd() { ls -alF }
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -124,6 +127,7 @@ alias l='ls -CF'
 # Dockerコマンド
 alias d='docker'
 alias dc='docker compose'
+alias docker-compose='docker compose'
 alias dcps='docker compose ps'
 alias dcud='docker compose up -d'
 alias dcudb='docker compose up -d --build'
